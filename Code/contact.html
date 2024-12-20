@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .content {
+        max-width: 60%;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .contact-form {
+        background-color: lightgray;
+        padding: 20px;
+        border-radius: 5px;
+      }
+
+      .contact-form .form-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .contact-form .form-group label {
+        flex: 1;
+        margin-right: 20px;
+        text-align: right;
+      }
+
+      .contact-form .form-group input,
+      .contact-form .form-group select {
+        flex: 2;
+        padding: 10px;
+        margin-right: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .contact-form .form-group:last-child input {
+        margin-right: 0;
+      }
+
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        resize: vertical;
+        height: 100px;
+        width: 900px;
+      }
+
+      .contact-form button {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        align-self: flex-end;
+      }
+
+      .contact-form button:hover {
+        background-color: darkblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <img
+            src="/Users/kevinyoong/Desktop/Joget/Coding_Exercise/Question 4/Images/joget_logo.png"
+            alt="Joget Logo"
+          />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="content">
+          <h1>Contact Us</h1>
+          <p>
+            Ready to fast-track your app development or transform your
+            enterprise digitally? Have questions about Joget subscriptions, our
+            upcoming events, webinars, or how to support our Tech for Humanity
+            program? We're here to help. Reach out to us by filling out the form
+            below or email us directly at
+            <a href="mailto:info@joget.com">info@joget.com</a>. Let's get
+            connected!
+          </p>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="first-name">First Name*</label>
+              <input type="text" id="first-name" name="first-name" required />
+              <label for="last-name">Last Name*</label>
+              <input type="text" id="last-name" name="last-name" required />
+            </div>
+            <div class="form-group">
+              <label for="work-email">Work Email*</label>
+              <input type="email" id="work-email" name="work-email" required />
+              <label for="job-title">Job Title*</label>
+              <input type="text" id="job-title" name="job-title" required />
+            </div>
+            <div class="form-group">
+              <label for="company-name">Company Name*</label>
+              <input
+                type="text"
+                id="company-name"
+                name="company-name"
+                required
+              />
+              <label for="industry">Industry*</label>
+              <input type="text" id="industry" name="industry" required />
+            </div>
+            <div class="form-group">
+              <label for="number-of-employees">Number of Employees*</label>
+              <input
+                type="number"
+                id="number-of-employees"
+                name="number-of-employees"
+                required
+              />
+              <label for="country-region">Country/Region*</label>
+              <input
+                type="text"
+                id="country-region"
+                name="country-region"
+                required
+              />
+            </div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </main>
+      <footer>
+        <div class="footer-left">
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <div class="footer-right">
+          <p>&copy; 2023 Your Company. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
